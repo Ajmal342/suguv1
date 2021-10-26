@@ -1,11 +1,11 @@
 {
-    "name": "Bottus",
-    "description": " Whatsapp bot.",
+    "name": "S-U-G-U-V-1",
+    "description": "https://github.com/Ajmal342/S-G-U-V-1",
     "keywords": [
-        "whatsapp",
-        "bot"
+        "WA",
+        "BOT"
     ],
-    "stack": "container",
+    "stack" "container",
     "env": {
         "ASENA_SESSION": {
             "description": "Enter whatsapp web session.",
@@ -79,7 +79,7 @@
         },
         "STICKER_PACKNAME": {
             "description": "Sticker pack name,author",
-            "value": "🥰,lyfe00011"
+            "value": "🥰,A-J-M-A-L"
         }
     },
     "addons": [
