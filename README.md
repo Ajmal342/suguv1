@@ -103,5 +103,5 @@ This is a Userbot based on WhatsAsena written by [A-J-M-A-L](https://github.com/
 
 ## Thanks To
 
-- [Yusuf Usta](https://github.com/Quiec) for [WhatsAsena](https://github.com/yusufusta/WhatsAsena)
+- [A-J-M-A-L](https://github.com/Ajmal342) for [WhatsAsena](https://github.com/yusufusta/WhatsAsena)
 - [@adiwajshing](https://github.com/adiwajshing) for [Baileys](https://github.com/adiwajshing/Baileys)
