@@ -12,7 +12,7 @@
 
 
 <p align="center">
-Project created by <a href="https://github.com/Ajmal342">A-J-M-A-L</a> private only
+Project created by <a href="https://github.com/Ajmal342">A-J-M-A-L</a>
     
     
        
