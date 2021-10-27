@@ -3,7 +3,7 @@
 <p align="center">
 <a href="https://github.com/Ajmal342"><img title="S-U-G-U-V-1" src="https://i.imgur.com/amjvcay.jpeg-Ajmal342?color=blue&style=for-the-badge&logo=github"></a>
 
-## S-G-U-V-1💖
+## SETUP💖
 
 
 
@@ -12,7 +12,7 @@
   <p align="center">
 
 **S-U-G-U-V-1,** is a WhatsApp bot written by [A-J-M-A-L](https://github.com/Ajmal342). Does not log into your account It is written on WhatsApp Web API.
-## Setup
+## ⏬⏬
 
 1.[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@GAMING-WITHWI40/S-G-U-V-1#index.js)
 
