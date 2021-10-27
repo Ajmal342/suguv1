@@ -10,6 +10,14 @@
 
 
 
+
+<p align="center">
+Project created by <a href="https://github.com/Ajmal342">A-J-M-A-L</a> to make it public
+    <br>
+       | © |
+        Reserved |
+
+
 ## SETUP💖
 
 
