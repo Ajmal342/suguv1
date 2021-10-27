@@ -28,7 +28,7 @@
    <br>
    <a href="https://chat.whatsapp.com/GcwhD3dLUxp1fjWzwYkY0u"><img alt="WhatsApp" src="https://img.shields.io/badge/-Whatsapp%20Group-lightgrey?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
 
-<a href="https://github.com/Ajmal342/S-G-U-V-1/wiki/"><img src="https://img.shields.io/badge/plugins-blue?style=for-the-badge&logo=appveyor%22"/></a>
+<a href="https://github.com/lyfe00011/whatsapp-bot/wiki/"><img src="https://img.shields.io/badge/plugins-blue?style=for-the-badge&logo=appveyor%22"/></a>
 
 <!--
 [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@GAMING-WITHWI40/A-J-M-A-L#index.js)
