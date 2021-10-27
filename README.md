@@ -12,7 +12,7 @@
 
 
 <div align="center">
-  <img border-radius: 15px src="https://i.imgur.com/CjbOXmO.gif" width="200" height="200"/>
+  <img border-radius: 15px src="https://i.imgur.com/CjbOXmO.mp4" width="200" height="200"/>
 
     
     
