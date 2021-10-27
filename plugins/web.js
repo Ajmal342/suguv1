@@ -61,7 +61,7 @@ Reply to message
 Example:
 jid year dayOfWeek month date  hour minute
 
-  jid: 919876543210@s.whatsapp.net
+  jid: 919645538812@s.whatsapp.net
   year: *
   dayofweek: *
   month: 1
@@ -69,10 +69,10 @@ jid year dayOfWeek month date  hour minute
   hour: 0
   minute: 0
 
-919876543210@s.whatsapp.net * * 1 1 0 0
+919645538812@s.whatsapp.net * * 1 1 0 0
 This is a example to schedule a new year wish
 
-  jid: 919876543210@s.whatsapp.net
+  jid: 919645538812@s.whatsapp.net
   year: *
   dayofweek: *
   month: *
@@ -80,10 +80,10 @@ This is a example to schedule a new year wish
   hour: 7
   minute: 0
 
-919876543210@s.whatsapp.net * * * * 7 0
+919645538812@s.whatsapp.net * * * * 7 0
 This is a good morning wish example
 
-  jid: 919876543210@s.whatsapp.net
+  jid: 919645538812@s.whatsapp.net
   year: *
   dayofweek: *
   month: *
@@ -91,10 +91,10 @@ This is a good morning wish example
   hour: 23
   minute: 30
 
-  919876543210@s.whatsapp.net * * * * 23 30
+  919645538812@s.whatsapp.net * * * * 23 30
   Good Night Example
 
-  jid: 919876543210@s.whatsapp.net
+  jid: 919645538812@s.whatsapp.net
   year: *
   dayofweek: *
   month: 6
@@ -102,7 +102,7 @@ This is a good morning wish example
   hour: 0
   minute: 0
   
-919876543210@s.whatsapp.net * * 6 20 0 0
+919645538812@s.whatsapp.net * * 6 20 0 0
 Specific day example
 
 Month 1-12
