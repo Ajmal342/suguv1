@@ -9,15 +9,6 @@
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Welcome+to+S-U-G-U-V-1+WA+Bot+repo;Created+by+A-J-M-A-L+Ser;This+is+the+Best++Version+bot;With+more+features)
 
 
-
-
-<div align="center">
-  <img border-radius: 15px src="https://i.imgur.com/CjbOXmO.gif" width="200" height="200"/>
-
-    
-    
-       
-
 ## SETUP💖
 
 
