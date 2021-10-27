@@ -1,7 +1,5 @@
 ## S-G-U-V-1
 
-This is a Userbot based on WhatsAsena written by [A-J-M-A-L](https://github.com/Ajmal342)
-
 ## S-G-U-V-1💖
 
 
