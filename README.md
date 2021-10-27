@@ -4,7 +4,7 @@ This is a Userbot based on WhatsAsena written by [A-J-M-A-L](https://github.com/
 
 ## What is S-G-U-V-1?
 
-<a href="#"><img title="VAVA" src="https://img.shields.io/badge/-VAVA-pink?&style=for-the-badge"></a>
+<a href="#"><img title="S-G-U-V-1" src="https://img.shields.io/badge/-S-G-U-V-1-pink?&style=for-the-badge"></a>
 
 **S-U-G-U-V-1,** is a WhatsApp bot written by [A-J-M-A-L](https://github.com/Ajmal342). Does not log into your account It is written on WhatsApp Web API.
 ## Setup
