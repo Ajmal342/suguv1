@@ -1,11 +1,7 @@
 ## WELCOME S-U-G-U-V-1💝
 
 <p align="center">
-<a href="https://github.com/Ajmal342"><img title="S-U-G-U-V-1" src="https://i.imgur.com/amjvcay.jpeg-Ajmal342?color=blue&style=for-the-badge&logo=github"></a>
-
-
-![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Welcome+to+S-U-G-U-V-1+WA+Bot+repo;Created+by+A-J-M-A-L+Ser;This+is+the+Best++
-bot;With+more+features)
+<a href="https://github.com/Ajmal342"><img title="S-U-G-U-V-1" src="https://i.imgur.com/amjvcay.jpeg-Ajmal342?color=blue&style=for-the-badge&logo=github"><
 
 
 
