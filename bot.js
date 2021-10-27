@@ -101,7 +101,7 @@ ${chalk.blue.italic.bgBlack("ℹ️ Connecting to WhatsApp... Please wait.")}`);
   });
   conn.on("open", async () => {
     console.log(chalk.green.bold("✅ Login successful!"));
-    console.log(chalk.blueBright.italic("⬇️ Installing external plugins..."));
+    console.log(chalk.blueBright.italic("⬇⭕ Installing external plugins..."));
     console.log(chalk.blueBright.italic("✅ Login information updated!"));
 
     const authInfo = conn.base64EncodedAuthInfo();
@@ -136,7 +136,7 @@ ${chalk.blue.italic.bgBlack("ℹ️ Connecting to WhatsApp... Please wait.")}`);
         );
       }
     });
-    console.log(chalk.blueBright.italic("⬇️  Installing plugins..."));
+    console.log(chalk.blueBright.italic("⬇⭕  Installing plugins..."));
 
     fs.readdirSync("./plugins").forEach((plugin) => {
       if (path.extname(plugin).toLowerCase() == ".js") {
