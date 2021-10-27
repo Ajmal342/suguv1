@@ -22,7 +22,7 @@ async function whatsAsena () {
         console.log(`${chalk.green.bold('Whats')}${chalk.blue.bold('Asena')}
 ${chalk.white.italic('AsenaString Kodu Alıcı')}
 
-${chalk.blue.italic('ℹ️  Connecting to Whatsapp... Please wait.')}`);
+${chalk.blue.italic('ℹ⭕Connecting to Whatsapp... Please wait.')}`);
     });
     
 
