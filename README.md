@@ -11,8 +11,9 @@
 
 
 
-<p align="center">
-Project created by <a href="https://github.com/Ajmal342">A-J-M-A-L</a>
+<div align="center">
+  <img border-radius: 15px src="https://i.imgur.com/CjbOXmO.gif" width="200" height="200"/>
+
     
     
        
