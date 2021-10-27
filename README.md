@@ -2,12 +2,12 @@
 
 This is a Userbot based on WhatsAsena written by [A-J-M-A-L](https://github.com/Ajmal342)
 
-## What is WhatsAsena?
+## What is S-G-U-V-1?
 
-**WhatsAsena,** is a WhatsApp bot written by [A-J-M-A-L](https://github.com/Ajmal342). Does not log into your account It is written on WhatsApp Web API.
+**S-U-G-U-V-1,** is a WhatsApp bot written by [A-J-M-A-L](https://github.com/Ajmal342). Does not log into your account It is written on WhatsApp Web API.
 ## Setup
 
-1. [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@GAMING-WITHWI40/A-J-M-A-L#index.js)
+1. [![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@GAMING-WITHWI40/S-G-U-V-1#index.js)
 
 2.[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/Ajmal342/S-G-U-V-1&template=https://github.com/Ajmal342/S-G-U-V-1)
    
