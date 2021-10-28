@@ -9,8 +9,8 @@
 
 
 <div align="center">  
-<details>
-     <summary>⏬<b>CLICK HERE FOR MORE INFO⏬</b></summary>
+<⏬<b>CLICK HERE FOR MORE INFO⏬>
+     <summary>⏬<b>SCROLL DOWN⏬</b></summary>
 
 ## SETUP💖
 
