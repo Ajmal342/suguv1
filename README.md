@@ -6,9 +6,14 @@
 
 ![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Lemon+milk&color=F70000&lines=Welcome+to+S-U-G-U-V-1+WA+Bot+repo;Created+by+A-J-M-A-L+SER;This+is+the+Best++feature+bot;With+more+features)
 
-<details>
 
-    <summary>⏬<b>CLICK HERE FOR MORE INFO⏬</b></summary>
+
+<details>
+         
+
+<summary>⏬<b>CLICK HERE FOR MORE INFO⏬</b></summary>
+
+
 
 ## SETUP💖
 
