@@ -10,7 +10,7 @@
 
 
 <div align="center">  
-<details>
+<CLICK🛑>
     <summary>⏬<b>CLICK HERE FOR MORE INFO⏬</b></summary>
 
 
