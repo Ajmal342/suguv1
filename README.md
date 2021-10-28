@@ -8,9 +8,11 @@
 
 
 
+
 <div align="center">  
-<⏬<b>CLICK HERE FOR MORE INFO⏬>
-     <summary>⏬<b>SCROLL DOWN⏬</b></summary>
+<details>
+    <summary>⏬<b>CLICK HERE FOR MORE INFO⏬</b></summary>
+
 
 ## SETUP💖
 
