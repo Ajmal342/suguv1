@@ -9,7 +9,7 @@
 
 
 <details>
-    <summary>⏬<b>CLICK HERE FOR MORE INFO⏬</b></summary>
+ 
 
 
 ## SETUP💖
