@@ -6,11 +6,13 @@ you may not use this file except in compliance with the License.
 WhatsAsena - Yusuf Usta
 */
 
+
 const Asena = require("../Utilis/events");
 const Config = require("../config");
 const { lydia, getLydia, setLydia } = require("../Utilis/lydia");
 const { getName, readmore } = require("../Utilis/download");
 const Language = require("../language");
+const { textToStylist, addSpace } = require("../Utilis/Misc");
 const Lang = Language.getString("_asena");
 Asena.addCommand(
   { pattern: "list ?(.*)", fromMe: true, dontAddCommandList: true },
@@ -34,14 +36,44 @@ Asena.addCommand(
         if (/\[(\W*)\]/.test(Config.HANDLERS)) {
           HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
         } else {
-          HANDLER = ".";
+          HANDLER = "";
         }
-        if (index == 3) CMD_HELP += readmore;
+        if (index == 4) CMD_HELP += readmore;
         CMD_HELP += `${index} ${
           match.length >= 3 ? HANDLER + match[2] : command.pattern
         }\n${command.desc}\n\n`;
       }
     });
+    return await message.sendMessage("```" + CMD_HELP + "```");
+  }
+);
+
+Asena.addCommand(
+  { pattern: "help ?(.*)", fromMe: true, dontAddCommandList: true },
+  async (message, match) => {
+    let CMD_HELP = `╭────────────────╮
+    ᴡʜᴀᴛsᴀᴘᴘ-ʙᴏᴛ
+╰────────────────╯
+╭────────────────
+`;
+    let commands = [];
+    Asena.commands.map(async (command, index) => {
+      if (
+        command.dontAddCommandList === false &&
+        command.pattern !== undefined
+      ) {
+        commands.push(
+          command.pattern.toString().match(/(\W*)([A-Za-z0-9ğüşiöç]*)/)[2]
+        );
+      }
+    });
+    commands.forEach((command, i) => {
+      CMD_HELP += `│ ${i + 1} ${addSpace(
+        i + 1,
+        commands.length
+      )}${textToStylist(command.toUpperCase(), "mono")}\n`;
+    });
+    CMD_HELP += `╰────────────────`;
     return await message.sendMessage("```" + CMD_HELP + "```");
   }
 );
