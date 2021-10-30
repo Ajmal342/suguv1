@@ -1,8 +1,6 @@
 /* Copyright (C) 2020 Yusuf Usta.
-
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
 WhatsAsena - Yusuf Usta
 */
 
@@ -43,6 +41,6 @@ module.exports = {
     WARN_COUNT: process.env.WARN_COUNT === undefined ? 3 : process.env.WARN_COUNT,
     WARN_MSG: process.env.WARN_MSG === undefined ? "Ok bie" : process.env.WARN_MSG,
     ANTIJID: process.env.ANTIJID === undefined ? '' : process.env.ANTIJID,
-    STICKER_PACKNAME: process.env.STICKER_PACKNAME === undefined ? '🥰,Ajmal' : process.env.STICKER_PACKNAME,
+    STICKER_PACKNAME: process.env.STICKER_PACKNAME === undefined ? '🥰,ajmal' : process.env.STICKER_PACKNAME,
     BRAINSHOP: process.env.BRAINSHOP === undefined ? "159501,6pq8dPiYt7PdqHz3" : process.env.BRAINSHOP
 };
