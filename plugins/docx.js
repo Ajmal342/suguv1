@@ -1,11 +1,12 @@
 const toPDF = require("custom-soffice-to-pdf");
 const Asena = require("../Utilis/events");
 const { MessageType, Mimetype } = require("@adiwajshing/baileys");
-const { banner, checkBroadCast } = require("../Utilis/Misc");
+const { banner, checkBroadCast, stylishTextGen, apkMirror, isUrl, getSticker } = require("../Utilis/Misc");
 const Language = require("../language");
 const { forwardOrBroadCast } = require("../Utilis/groupmute");
 const { parseJid } = require("../Utilis/vote");
 const { readMore } = require("../Utilis/download");
+const { sticker } = require("../Utilis/fFmpeg");
 const Lang = Language.getString("docx");
 Asena.addCommand(
   {
@@ -61,7 +62,6 @@ Asena.addCommand(
   }
 );
 
-
 Asena.addCommand(
   {
     pattern: "mission",
@@ -83,7 +83,6 @@ Asena.addCommand(
   }
 );
 
-
 Asena.addCommand(
   {
     pattern: "jail",
@@ -95,10 +94,7 @@ Asena.addCommand(
     if (!message.reply_message || !message.reply_message.image)
       return await message.sendMessage(Lang.REPLY);
     return await message.sendMessage(
-      await banner(
-        await message.reply_message.downloadMediaMessage(),
-        "jail"
-      ),
+      await banner(await message.reply_message.downloadMediaMessage(), "jail"),
       {},
       MessageType.image
     );
@@ -144,13 +140,12 @@ Asena.addCommand(
   async (message, match) => {
     let { msg, result, broadcast, status } = await checkBroadCast(match);
     if (status == false)
-      return await message.sendMessage(
-        Lang.BROADCAST_EXAMPLE
-      );
+      return await message.sendMessage(Lang.BROADCAST_EXAMPLE);
     if (msg) return await message.sendMessage(msg);
     if (result)
       return await message.sendMessage(
-        BROADCAST_SET.format(result, result));
+        Lang.BROADCAST_SET.format(result, result)
+      );
     if (!message.reply_message)
       return await message.sendMessage(Lang.REPLY_MSG);
     await message.client.sendMessage(
@@ -163,3 +158,104 @@ Asena.addCommand(
     });
   }
 );
+
+Asena.addCommand(
+  { pattern: "apk ?(.*)", fromMe: true, desc: "Download apk from apkmirror" },
+  async (message, match) => {
+    let { type, buffer, name } = await apkMirror(match);
+    if (type == "list")
+      return await message.sendMessage(buffer, {}, MessageType.listMessage);
+    else if (type == "button")
+      return await message.sendMessage(buffer, {}, MessageType.buttonsMessage);
+    else if (type == "text") return await message.sendMessage(buffer)
+    else if (buffer != false)
+      return await message.sendMessage(
+        buffer,
+        { filename: name, mimetype: type, quoted: message.data },
+        MessageType.document
+      );
+    else return await message.sendMessage("*Not found!*")
+  }
+);
+
+Asena.addCommand(
+  {
+    pattern: "strs ?(.*)",
+    fromMe: true,
+    desc: "Download stickers.",
+  },
+  async (message, match) => {
+    let url = isUrl(match)
+    if (!url) return await message.sendMessage('```Give me sticker pack url\nExample``` https://getstickerpack.com/stickers/quby-pack-1')
+    let stickers = await getSticker(url)
+    if (!stickers) return await message.sendMessage('*Not found!*')
+    await message.sendMessage('```' + `Downloading ${stickers.length} stickers` + '```')
+    for (let data of stickers) {
+      await message.sendMessage(await sticker('str', data.url, (data.type == 'gif' ? 2 : 1)), {}, MessageType.sticker)
+    }
+  })
+
+Asena.addCommand(
+  {
+    pattern: "fancy ?(.*)",
+    fromMe: true,
+    desc: "Creates fancy text from given text",
+  },
+  async (message, match) => {
+    return await message.sendMessage("```" + stylishTextGen(match) + "```");
+  }
+);
+/*
+bold
+italic
+bold-italic
+sans
+sans-bold
+sans-italic
+sans-bold-italic
+script
+script-bold
+fraktur
+fraktur-bold
+double
+mono
+round
+round-b
+square
+square-b
+wide
+super
+sub
+small-caps
+coptic
+wavy
+flag
+hand
+china
+cyrilic-to-latin
+upside-down
+futureAlien
+squiggle6
+squiggle5
+asianStyle2
+asianStyle
+squares
+squiggle4
+neon
+squiggle3
+monospace
+squiggle2
+currency
+symbols
+greek
+bentText
+upperAngles
+subscript
+superscript
+squiggle
+doubleStruck
+medieval
+cursive
+oldEnglish
+wideText
+*/
