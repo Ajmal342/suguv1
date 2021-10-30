@@ -1,5 +1,5 @@
 {
-    "name": "suguv1",
+    "name": "Bottus",
     "description": " Whatsapp bot.",
     "keywords": [
         "whatsapp",
@@ -79,7 +79,7 @@
         },
         "STICKER_PACKNAME": {
             "description": "Sticker pack name,author",
-            "value": "🥰,ajmal"
+            "value": "🥰,lyfe00011"
         }
     },
     "addons": [
