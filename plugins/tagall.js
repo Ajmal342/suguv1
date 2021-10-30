@@ -1,8 +1,6 @@
 /* Copyright (C) 2020 Yusuf Usta.
-
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-
 WhatsAsena - Yusuf Usta
 */
 
@@ -10,7 +8,9 @@ const Asena = require("../Utilis/events");
 const Language = require("../language");
 const { participateInVote, parseVote } = require("../Utilis/vote");
 const { forwardOrBroadCast } = require("../Utilis/groupmute");
+const { addSpace } = require("../Utilis/Misc");
 const Lang = Language.getString("tagall");
+const s = '```'
 // const config = require('../config');
 Asena.addCommand(
   {
@@ -24,8 +24,8 @@ Asena.addCommand(
     let mentionedJid = participants.map((user) => user.jid);
     if (match == "all") {
       let mesaj = "";
-      mentionedJid.forEach((e) => (mesaj += `@${e.split("@")[0]}\n`));
-      return await message.sendMessage(mesaj, {
+      mentionedJid.forEach((e, i) => (mesaj += `${i + 1}${addSpace(i + 1, participants.length)} @${e.split("@")[0]}\n`));
+      return await message.sendMessage(s + mesaj + s, {
         contextInfo: { mentionedJid },
       });
     } else if (match == "admin") {
