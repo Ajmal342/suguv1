@@ -1,11 +1,10 @@
 {
-    "name": "Suguv1",
-    "description": "suguv1 - re-edited from S-G-U. World’s first UserBot made for WhatsApp.",
-    "logo": "https://i.imgur.com/QrDCZzH.jpeg",
-    "keywords": ["whatsapp", "userbot", "Asena", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/Ajmal342/S-G-U-V-1",
-    "website":   "under maintenance",
-    "success_url": "under maintenance",
+    "name": "suguv1",
+    "description": " Whatsapp bot.",
+    "keywords": [
+        "whatsapp",
+        "bot"
+    ],
     "stack": "container",
     "env": {
         "ASENA_SESSION": {
@@ -80,7 +79,7 @@
         },
         "STICKER_PACKNAME": {
             "description": "Sticker pack name,author",
-            "value": "🥰,Ajmal"
+            "value": "🥰,ajmal"
         }
     },
     "addons": [
