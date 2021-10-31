@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ajmal342/S-G-U-V-1.git"
+    "url": "git+https://github.com/Ajmal342/suguv1.git"
   },
   "keywords": [
     "whatsapp",
     "whatsapp bot",
     "user bot"
   ],
-  "author": "AJMAL",
+  "author": "ajmal",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/Ajmal342/S-G-U-V-1/issues"
+    "url": "https://github.com/Ajmal342/suguv1/issues"
   },
-  "homepage": "https://github.com/Ajmal342/S-G-U-V-1#readme",
+  "homepage": "https://github.com/Ajmal342/suguv1#readme",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.2",
     "axios": "^0.21.1",
