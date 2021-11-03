@@ -23,7 +23,7 @@
 **S-U-G-U-V-1**,is a WhatsApp bot written by [A-J-M-A-L](https://github.com/Ajmal342).
 ## ⏬⏬
 
-1.[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@Nightbot2O/baileys-qr)
+1.[![Run on Repl.it](https://repl.it/badge/github/quiec/whatsAlfa)](https://replit.com/@GAMING-WITHWI40/baileys-qr#index.js)
 
 2.[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https://github.com/Ajmal342/Suguv1&template=https://github.com/Ajmal342/Suguv1)  
    
