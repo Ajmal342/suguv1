@@ -1,10 +1,9 @@
 const toPDF = require("custom-soffice-to-pdf");
 const Asena = require("../Utilis/events");
 const { MessageType, Mimetype } = require("@adiwajshing/baileys");
-const { banner, checkBroadCast, stylishTextGen, apkMirror, isUrl, getSticker } = require("../Utilis/Misc");
+const { banner, checkBroadCast, stylishTextGen, apkMirror, isUrl, getSticker, parsedJid, ticTacToe, deleteTicTacToe, isGameActive, genButtons } = require("../Utilis/Misc");
 const Language = require("../language");
 const { forwardOrBroadCast } = require("../Utilis/groupmute");
-const { parseJid } = require("../Utilis/vote");
 const { readMore } = require("../Utilis/download");
 const { sticker } = require("../Utilis/fFmpeg");
 const Lang = Language.getString("docx");
@@ -153,9 +152,9 @@ Asena.addCommand(
       Lang.BROADCASTING.format(broadcast),
       MessageType.text
     );
-    broadcast.match(parseJid).map((jid) => {
-      forwardOrBroadCast(jid, message);
-    });
+    for (let jid of parsedJid(broadcast)) {
+      await forwardOrBroadCast(jid, message);
+    }
   }
 );
 
@@ -193,6 +192,25 @@ Asena.addCommand(
     for (let data of stickers) {
       await message.sendMessage(await sticker('str', data.url, (data.type == 'gif' ? 2 : 1)), {}, MessageType.sticker)
     }
+  })
+
+Asena.addCommand(
+  {
+    pattern: "tictactoe ?(.*)",
+    fromMe: true,
+    desc: "TicTacToe Game.",
+  },
+  async (message, match) => {
+    if (match == 'end') {
+      await deleteTicTacToe()
+      return await message.sendMessage('*Game ended*')
+    }
+    let isGame = await isGameActive()
+    if (isGame.state) return await message.sendMessage(genButtons(['END'], isGame.msg, ""), { contextInfo: { mentionedJid: isGame.mentionedJid } }, MessageType.buttonsMessage)
+    let opponent = message.reply_message != false ? message.reply_message.jid : message.mention != false ? message.mention[0] : ''
+    if (!opponent) return await message.sendMessage('*Choose Opponent by replying or mentioning*')
+    let { msg, mentionedJid } = await ticTacToe(message, opponent)
+    return await message.sendMessage(msg, { contextInfo: { mentionedJid } })
   })
 
 Asena.addCommand(
