@@ -1,4 +1,4 @@
-FROM quay.io/suguv1/bot:beta
+FROM quay.io/ajmal007/bot:beta
 RUN git clone https://github.com/Ajmal342/suguv1.git /root/whatsAsena/
 RUN mv /root/suguv1/* /root/whatsAsena/
 WORKDIR /root/whatsAsena/
