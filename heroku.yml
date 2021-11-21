@@ -1,5 +1,5 @@
 build: 
   docker: 
       worker: Dockerfile
-run:
+run:suguv1
    worker: npm start
