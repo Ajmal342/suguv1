@@ -43,11 +43,6 @@
             "required": false,
             "value": "false"
         },
-        "EXT": {
-            "description": "Enter xteam api",
-            "required": false,
-            "value": "false"
-        },
         "CLR_SESSION": {
             "description": "Enter true to delete old session.",
             "required": false,
@@ -71,7 +66,7 @@
         "REMOVEBG_KEY": {
             "description": "Get your key from remove.bg",
             "required": false,
-            "value": "false"
+            "value": "null"
         },
         "LANGUAGE": {
             "description": "Enter bot language, example EN for English, ID for Bahasa Indonesia, TR for Turkish",
@@ -79,7 +74,11 @@
         },
         "STICKER_PACKNAME": {
             "description": "Sticker pack name,author",
-            "value": "A-J-M-A-L,ajmal007"
+            "value": "🍃AJU💖,AJMAL011"
+        },
+        "DISABLE_BOT":{
+         "description": "Disable or Block bot in group/chat.Enter required chat jid separated by ,",
+            "value": "null"
         }
     },
     "addons": [
@@ -93,3 +92,4 @@
         }
     ]
 }
+
